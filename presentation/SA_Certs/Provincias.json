@@ -1,0 +1,15 @@
+{
+  "presentationTable" : {
+    "name" : "Provincias",
+    "presentationColumns" : [ {
+      "name" : "COD_CCAA",
+      "sourceLogicalColumn" : "logicalColumn:BM_Certs.DIM_PROVINCIAS.COD_CCAA"
+    }, {
+      "name" : "PROVINCIA",
+      "sourceLogicalColumn" : "logicalColumn:BM_Certs.DIM_PROVINCIAS.PROVINCIA"
+    }, {
+      "name" : "COD_PROVINCIA",
+      "sourceLogicalColumn" : "logicalColumn:BM_Certs.DIM_PROVINCIAS.COD_PROVINCIA"
+    } ]
+  }
+}

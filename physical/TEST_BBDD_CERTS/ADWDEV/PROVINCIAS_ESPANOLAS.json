@@ -1,0 +1,31 @@
+{
+  "physicalTable" : {
+    "name" : "PROVINCIAS_ESPANOLAS",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "COD_CCAA",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "PROVINCIA",
+      "dataType" : "VARCHAR",
+      "length" : 4000,
+      "nullable" : false
+    }, {
+      "name" : "CIUDAD",
+      "dataType" : "VARCHAR",
+      "length" : 4000,
+      "nullable" : false
+    }, {
+      "name" : "CODIGO_CIUDAD",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

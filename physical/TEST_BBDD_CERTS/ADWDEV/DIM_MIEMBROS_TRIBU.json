@@ -51,6 +51,16 @@
     "caching" : {
       "enable" : true,
       "expiryTime" : 0
-    }
+    },
+    "joins" : [ {
+      "rightTable" : "physicalTable:TEST_BBDD_CERTS.ADWDEV.DIM_PROVINCIAS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:TEST_BBDD_CERTS.ADWDEV.DIM_MIEMBROS_TRIBU.SEDE",
+        "rightColumn" : "physicalColumn:TEST_BBDD_CERTS.ADWDEV.DIM_PROVINCIAS.COD_PROVINCIA"
+      } ],
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    } ]
   }
 }

@@ -1,0 +1,60 @@
+{
+  "logicalTable" : {
+    "name" : "DIM_PROVINCIAS",
+    "type" : "DIMENSION",
+    "logicalColumns" : [ {
+      "name" : "COD_CCAA",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_PROVINCIAS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.DIM_PROVINCIAS.COD_CCAA" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "PROVINCIA",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_PROVINCIAS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.DIM_PROVINCIAS.PROVINCIA" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "COD_PROVINCIA",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_PROVINCIAS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.DIM_PROVINCIAS.COD_PROVINCIA" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "DIM_PROVINCIAS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:TEST_BBDD_CERTS.ADWDEV.DIM_PROVINCIAS" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "primaryKey" : [ "COD_PROVINCIA" ]
+  }
+}

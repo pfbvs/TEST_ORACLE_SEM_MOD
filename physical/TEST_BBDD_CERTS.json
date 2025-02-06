@@ -1,29 +1,25 @@
 {
   "database" : {
-    "name" : "Test_Sem_Model",
-    "databaseType" : "ORACLE_DATABASE",
+    "name" : "TEST_BBDD_CERTS",
+    "description" : "Test base de datos certifiaciones",
+    "databaseType" : "ORACLE_ADW",
     "connectionPools" : [ {
-      "name" : "DUMMY_CP",
+      "name" : "TEST_POOL1",
+      "connection" : "'system'.'test_conex_sem_model'",
       "remoteConnection" : false,
       "maxConnections" : 10,
-      "requiresFullyQualifedTableNames" : false,
+      "requiresFullyQualifedTableNames" : true,
       "connectionTimeout" : 5,
       "connectionTimeoutUnit" : "MINUTES",
       "multithreaded" : true,
       "supportParams" : true,
+      "isolationLevel" : "default",
       "writeBackConfig" : {
         "dbSupportsUnicode" : false,
         "bulkInsertBufferSize" : 10240,
         "transactionBoundary" : 1000,
         "tempTablePrefix" : "TT"
       }
-    } ],
-    "featureOverrides" : [ {
-      "name" : "RAND_SUPPORTED",
-      "value" : false
-    }, {
-      "name" : "MAX_BULK_FETCH_BUFFER_SIZE",
-      "value" : 327680
     } ],
     "virtualPrivateDatabase" : false,
     "crmMetadataTables" : false,

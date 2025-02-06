@@ -1,0 +1,33 @@
+{
+  "presentationTable" : {
+    "name" : "Miembros_Tribu",
+    "presentationColumns" : [ {
+      "name" : "ID",
+      "sourceLogicalColumn" : "logicalColumn:BM_Certs.DIM_MIEMBROS_TRIBU.ID"
+    }, {
+      "name" : "MIEMBRO_NOMBRE",
+      "sourceLogicalColumn" : "logicalColumn:BM_Certs.DIM_MIEMBROS_TRIBU.MIEMBRO_NOMBRE"
+    }, {
+      "name" : "AREA",
+      "sourceLogicalColumn" : "logicalColumn:BM_Certs.DIM_MIEMBROS_TRIBU.AREA"
+    }, {
+      "name" : "EQUIPO",
+      "sourceLogicalColumn" : "logicalColumn:BM_Certs.DIM_MIEMBROS_TRIBU.EQUIPO"
+    }, {
+      "name" : "EMAIL",
+      "sourceLogicalColumn" : "logicalColumn:BM_Certs.DIM_MIEMBROS_TRIBU.EMAIL"
+    }, {
+      "name" : "SEDE",
+      "sourceLogicalColumn" : "logicalColumn:BM_Certs.DIM_MIEMBROS_TRIBU.SEDE"
+    }, {
+      "name" : "ESTADO",
+      "sourceLogicalColumn" : "logicalColumn:BM_Certs.DIM_MIEMBROS_TRIBU.ESTADO"
+    }, {
+      "name" : "CERTIFICADO",
+      "sourceLogicalColumn" : "logicalColumn:BM_Certs.DIM_MIEMBROS_TRIBU.CERTIFICADO"
+    }, {
+      "name" : "CONTADOR",
+      "sourceLogicalColumn" : "logicalColumn:BM_Certs.DIM_MIEMBROS_TRIBU.CONTADOR"
+    } ]
+  }
+}

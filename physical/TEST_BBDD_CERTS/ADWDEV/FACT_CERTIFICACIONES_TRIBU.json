@@ -1,0 +1,74 @@
+{
+  "physicalTable" : {
+    "name" : "FACT_CERTIFICACIONES_TRIBU",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "DIM_MIEMBRO",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "COD_CERTIFICACION",
+      "dataType" : "VARCHAR",
+      "length" : 15,
+      "nullable" : false
+    }, {
+      "name" : "DIM_FECHA_OBTENCION",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "FECHA_CADUCIDAD",
+      "dataType" : "DATETIME",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "ESTADO",
+      "dataType" : "VARCHAR",
+      "length" : 15,
+      "nullable" : false
+    }, {
+      "name" : "CONTADOR",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "ID",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : false
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    },
+    "joins" : [ {
+      "rightTable" : "physicalTable:TEST_BBDD_CERTS.ADWDEV.DIM_CERTIFICACIONES",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:TEST_BBDD_CERTS.ADWDEV.FACT_CERTIFICACIONES_TRIBU.COD_CERTIFICACION",
+        "rightColumn" : "physicalColumn:TEST_BBDD_CERTS.ADWDEV.DIM_CERTIFICACIONES.COD_CERTIFICACION"
+      } ],
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    }, {
+      "rightTable" : "physicalTable:TEST_BBDD_CERTS.ADWDEV.DIM_MIEMBROS_TRIBU",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:TEST_BBDD_CERTS.ADWDEV.FACT_CERTIFICACIONES_TRIBU.DIM_MIEMBRO",
+        "rightColumn" : "physicalColumn:TEST_BBDD_CERTS.ADWDEV.DIM_MIEMBROS_TRIBU.ID"
+      } ],
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    }, {
+      "rightTable" : "physicalTable:TEST_BBDD_CERTS.ADWDEV.DIM_FECHA",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:TEST_BBDD_CERTS.ADWDEV.FACT_CERTIFICACIONES_TRIBU.FECHA_CADUCIDAD",
+        "rightColumn" : "physicalColumn:TEST_BBDD_CERTS.ADWDEV.DIM_FECHA.FECHA"
+      } ],
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    } ]
+  }
+}

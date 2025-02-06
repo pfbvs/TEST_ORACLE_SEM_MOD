@@ -1,0 +1,88 @@
+{
+  "logicalTable" : {
+    "name" : "DIM_CERTIFICACIONES",
+    "type" : "DIMENSION",
+    "logicalColumns" : [ {
+      "name" : "CLOUD",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_CERTIFICACIONES",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.DIM_CERTIFICACIONES.CLOUD" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "PILAR",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_CERTIFICACIONES",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.DIM_CERTIFICACIONES.PILAR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "SOLUTION",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_CERTIFICACIONES",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.DIM_CERTIFICACIONES.SOLUTION" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "COD_CERTIFICACION",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_CERTIFICACIONES",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.DIM_CERTIFICACIONES.COD_CERTIFICACION" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "NOMBRE_CERTIFICACION",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_CERTIFICACIONES",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.DIM_CERTIFICACIONES.NOMBRE_CERTIFICACION" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "DIM_CERTIFICACIONES",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:TEST_BBDD_CERTS.ADWDEV.DIM_CERTIFICACIONES" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "primaryKey" : [ "COD_CERTIFICACION" ]
+  }
+}

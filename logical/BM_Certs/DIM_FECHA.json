@@ -1,0 +1,438 @@
+{
+  "logicalTable" : {
+    "name" : "DIM_FECHA",
+    "type" : "DIMENSION",
+    "logicalColumns" : [ {
+      "name" : "ID_FECHA",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_FECHA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.DIM_FECHA.ID_FECHA" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "FECHA",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_FECHA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.DIM_FECHA.FECHA" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "TIPO_FECHA",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_FECHA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.DIM_FECHA.TIPO_FECHA" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DIA_NOMBRE",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_FECHA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.DIM_FECHA.DIA_NOMBRE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DIA_NUM_EN_SEMANA",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_FECHA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.DIM_FECHA.DIA_NUM_EN_SEMANA" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DIA_NUM_EN_MES",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_FECHA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.DIM_FECHA.DIA_NUM_EN_MES" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DIA_NUM_EN_TRIMESTRE",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_FECHA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.DIM_FECHA.DIA_NUM_EN_TRIMESTRE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DIA_NUM_EN_AÑO",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_FECHA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.DIM_FECHA.DIA_NUM_EN_AÑO" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "SEMANA_COD",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_FECHA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.DIM_FECHA.SEMANA_COD" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "SEMANA_DESC",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_FECHA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.DIM_FECHA.SEMANA_DESC" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "SEMANA_FECHA_INI",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_FECHA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.DIM_FECHA.SEMANA_FECHA_INI" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "SEMANA_FECHA_FIN",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_FECHA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.DIM_FECHA.SEMANA_FECHA_FIN" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "SEMANA_NUM_EN_MES",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_FECHA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.DIM_FECHA.SEMANA_NUM_EN_MES" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "SEMANA_NUM_EN_AÑO",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_FECHA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.DIM_FECHA.SEMANA_NUM_EN_AÑO" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "MES_COD",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_FECHA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.DIM_FECHA.MES_COD" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "MES_DESC",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_FECHA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.DIM_FECHA.MES_DESC" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "MES_FECHA_INI",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_FECHA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.DIM_FECHA.MES_FECHA_INI" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "MES_FECHA_FIN",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_FECHA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.DIM_FECHA.MES_FECHA_FIN" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "MES_NUM",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_FECHA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.DIM_FECHA.MES_NUM" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "MES_DIAS",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_FECHA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.DIM_FECHA.MES_DIAS" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "TRIMESTRE_COD",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_FECHA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.DIM_FECHA.TRIMESTRE_COD" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "TRIMESTRE_DESC",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_FECHA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.DIM_FECHA.TRIMESTRE_DESC" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "TRIMESTRE_FECHA_INI",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_FECHA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.DIM_FECHA.TRIMESTRE_FECHA_INI" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "TRIMESTRE_FECHA_FIN",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_FECHA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.DIM_FECHA.TRIMESTRE_FECHA_FIN" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "TRIMESTRE_NUM",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_FECHA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.DIM_FECHA.TRIMESTRE_NUM" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "TRIMESTRE_DIAS",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_FECHA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.DIM_FECHA.TRIMESTRE_DIAS" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "AÑO",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_FECHA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.DIM_FECHA.AÑO" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "AÑO_FECHA_INI",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_FECHA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.DIM_FECHA.AÑO_FECHA_INI" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "AÑO_FECHA_FIN",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_FECHA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.DIM_FECHA.AÑO_FECHA_FIN" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "AÑO_DIAS",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_FECHA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.DIM_FECHA.AÑO_DIAS" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "DIM_FECHA",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:TEST_BBDD_CERTS.ADWDEV.DIM_FECHA" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "primaryKey" : [ "FECHA" ]
+  }
+}

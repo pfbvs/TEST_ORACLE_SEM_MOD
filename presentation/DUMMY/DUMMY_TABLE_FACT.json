@@ -1,9 +1,0 @@
-{
-  "presentationTable" : {
-    "name" : "DUMMY_TABLE_FACT",
-    "presentationColumns" : [ {
-      "name" : "DUMMY_COLUMN",
-      "sourceLogicalColumn" : "logicalColumn:DUMMY.DUMMY_TABLE_FACT.DUMMY_COLUMN"
-    } ]
-  }
-}

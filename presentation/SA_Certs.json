@@ -1,0 +1,17 @@
+{
+  "subjectArea" : {
+    "name" : "SA_Certs",
+    "sourceBusinessModel" : "businessModel:BM_Certs",
+    "tableOrder" : [ {
+      "name" : "presentationTable:SA_Certs.Tipos_Certs"
+    }, {
+      "name" : "presentationTable:SA_Certs.Fecha"
+    }, {
+      "name" : "presentationTable:SA_Certs.Miembros_Tribu"
+    }, {
+      "name" : "presentationTable:SA_Certs.Provincias"
+    }, {
+      "name" : "presentationTable:SA_Certs.CERTIFICACIONES TRIBU"
+    } ]
+  }
+}

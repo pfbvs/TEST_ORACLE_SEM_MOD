@@ -1,0 +1,150 @@
+{
+  "logicalTable" : {
+    "name" : "DIM_MIEMBROS_TRIBU",
+    "type" : "DIMENSION",
+    "logicalColumns" : [ {
+      "name" : "ID",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_MIEMBROS_TRIBU",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.DIM_MIEMBROS_TRIBU.ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "MIEMBRO_NOMBRE",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_MIEMBROS_TRIBU",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.DIM_MIEMBROS_TRIBU.MIEMBRO_NOMBRE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "AREA",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_MIEMBROS_TRIBU",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.DIM_MIEMBROS_TRIBU.AREA" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "EQUIPO",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_MIEMBROS_TRIBU",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.DIM_MIEMBROS_TRIBU.EQUIPO" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "EMAIL",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_MIEMBROS_TRIBU",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.DIM_MIEMBROS_TRIBU.EMAIL" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "SEDE",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_MIEMBROS_TRIBU",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.DIM_MIEMBROS_TRIBU.SEDE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "ESTADO",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_MIEMBROS_TRIBU",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.DIM_MIEMBROS_TRIBU.ESTADO" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CERTIFICADO",
+      "dataType" : "CHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_MIEMBROS_TRIBU",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.DIM_MIEMBROS_TRIBU.CERTIFICADO" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CONTADOR",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_MIEMBROS_TRIBU",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.DIM_MIEMBROS_TRIBU.CONTADOR" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "DIM_MIEMBROS_TRIBU",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:TEST_BBDD_CERTS.ADWDEV.DIM_MIEMBROS_TRIBU" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "joins" : [ {
+      "rightTable" : "logicalTable:BM_Certs.DIM_PROVINCIAS",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE",
+      "drivingTable" : "None"
+    } ],
+    "primaryKey" : [ "ID" ]
+  }
+}

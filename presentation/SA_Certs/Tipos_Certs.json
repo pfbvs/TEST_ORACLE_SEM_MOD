@@ -1,0 +1,21 @@
+{
+  "presentationTable" : {
+    "name" : "Tipos_Certs",
+    "presentationColumns" : [ {
+      "name" : "CLOUD",
+      "sourceLogicalColumn" : "logicalColumn:BM_Certs.DIM_CERTIFICACIONES.CLOUD"
+    }, {
+      "name" : "PILAR",
+      "sourceLogicalColumn" : "logicalColumn:BM_Certs.DIM_CERTIFICACIONES.PILAR"
+    }, {
+      "name" : "SOLUTION",
+      "sourceLogicalColumn" : "logicalColumn:BM_Certs.DIM_CERTIFICACIONES.SOLUTION"
+    }, {
+      "name" : "COD_CERTIFICACION",
+      "sourceLogicalColumn" : "logicalColumn:BM_Certs.DIM_CERTIFICACIONES.COD_CERTIFICACION"
+    }, {
+      "name" : "NOMBRE_CERTIFICACION",
+      "sourceLogicalColumn" : "logicalColumn:BM_Certs.DIM_CERTIFICACIONES.NOMBRE_CERTIFICACION"
+    } ]
+  }
+}

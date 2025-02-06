@@ -1,0 +1,131 @@
+{
+  "logicalTable" : {
+    "name" : "FACT_CERTIFICACIONES_TRIBU",
+    "type" : "FACT",
+    "logicalColumns" : [ {
+      "name" : "DIM_MIEMBRO",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "FACT_CERTIFICACIONES_TRIBU",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.FACT_CERTIFICACIONES_TRIBU.DIM_MIEMBRO" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "COD_CERTIFICACION",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "FACT_CERTIFICACIONES_TRIBU",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.FACT_CERTIFICACIONES_TRIBU.COD_CERTIFICACION" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DIM_FECHA_OBTENCION",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "FACT_CERTIFICACIONES_TRIBU",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.FACT_CERTIFICACIONES_TRIBU.DIM_FECHA_OBTENCION" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "FECHA_CADUCIDAD",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "FACT_CERTIFICACIONES_TRIBU",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.FACT_CERTIFICACIONES_TRIBU.FECHA_CADUCIDAD" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "ESTADO",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "FACT_CERTIFICACIONES_TRIBU",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.FACT_CERTIFICACIONES_TRIBU.ESTADO" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CONTADOR",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "FACT_CERTIFICACIONES_TRIBU",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.FACT_CERTIFICACIONES_TRIBU.CONTADOR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "ID",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "FACT_CERTIFICACIONES_TRIBU",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:TEST_BBDD_CERTS.ADWDEV.FACT_CERTIFICACIONES_TRIBU.ID" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "FACT_CERTIFICACIONES_TRIBU",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:TEST_BBDD_CERTS.ADWDEV.FACT_CERTIFICACIONES_TRIBU" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "joins" : [ {
+      "rightTable" : "logicalTable:BM_Certs.DIM_MIEMBROS_TRIBU",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE",
+      "drivingTable" : "None"
+    }, {
+      "rightTable" : "logicalTable:BM_Certs.DIM_FECHA",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE",
+      "drivingTable" : "None"
+    }, {
+      "rightTable" : "logicalTable:BM_Certs.DIM_CERTIFICACIONES",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE",
+      "drivingTable" : "None"
+    } ]
+  }
+}
