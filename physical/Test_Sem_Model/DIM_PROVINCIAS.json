@@ -1,0 +1,26 @@
+{
+  "physicalTable" : {
+    "name" : "DIM_PROVINCIAS",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "COD_CCAA",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "PROVINCIA",
+      "dataType" : "VARCHAR",
+      "length" : 500,
+      "nullable" : false
+    }, {
+      "name" : "COD_PROVINCIA",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : false
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

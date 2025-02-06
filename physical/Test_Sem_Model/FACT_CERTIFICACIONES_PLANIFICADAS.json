@@ -1,0 +1,41 @@
+{
+  "physicalTable" : {
+    "name" : "FACT_CERTIFICACIONES_PLANIFICADAS",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "DIM_MIEMBRO",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "COD_CERTIFICACION",
+      "dataType" : "VARCHAR",
+      "length" : 15,
+      "nullable" : false
+    }, {
+      "name" : "VOUCHER_ESTADO",
+      "dataType" : "VARCHAR",
+      "length" : 100,
+      "nullable" : true
+    }, {
+      "name" : "FECHA_PREVISTA_EXAM",
+      "dataType" : "DATETIME",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "ESTADO",
+      "dataType" : "VARCHAR",
+      "length" : 100,
+      "nullable" : true
+    }, {
+      "name" : "CONTADOR",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : false
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

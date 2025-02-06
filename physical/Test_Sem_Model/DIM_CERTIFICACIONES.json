@@ -1,0 +1,36 @@
+{
+  "physicalTable" : {
+    "name" : "DIM_CERTIFICACIONES",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "CLOUD",
+      "dataType" : "VARCHAR",
+      "length" : 100,
+      "nullable" : true
+    }, {
+      "name" : "PILAR",
+      "dataType" : "VARCHAR",
+      "length" : 250,
+      "nullable" : true
+    }, {
+      "name" : "SOLUTION",
+      "dataType" : "VARCHAR",
+      "length" : 250,
+      "nullable" : true
+    }, {
+      "name" : "COD_CERTIFICACION",
+      "dataType" : "VARCHAR",
+      "length" : 15,
+      "nullable" : false
+    }, {
+      "name" : "NOMBRE_CERTIFICACION",
+      "dataType" : "VARCHAR",
+      "length" : 500,
+      "nullable" : false
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

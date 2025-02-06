@@ -1,0 +1,31 @@
+{
+  "physicalTable" : {
+    "name" : "FACT_ENTRADA_BLOG",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "ID",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "DIM_MIEMBRO",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "TEMA",
+      "dataType" : "VARCHAR",
+      "length" : 1024,
+      "nullable" : true
+    }, {
+      "name" : "DIM_FECHA_PUBLICACION",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

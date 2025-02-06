@@ -1,0 +1,56 @@
+{
+  "physicalTable" : {
+    "name" : "DIM_MIEMBROS_TRIBU",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "ID",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "MIEMBRO_NOMBRE",
+      "dataType" : "VARCHAR",
+      "length" : 500,
+      "nullable" : false
+    }, {
+      "name" : "AREA",
+      "dataType" : "VARCHAR",
+      "length" : 100,
+      "nullable" : false
+    }, {
+      "name" : "EQUIPO",
+      "dataType" : "VARCHAR",
+      "length" : 100,
+      "nullable" : false
+    }, {
+      "name" : "EMAIL",
+      "dataType" : "VARCHAR",
+      "length" : 100,
+      "nullable" : true
+    }, {
+      "name" : "SEDE",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "ESTADO",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : false
+    }, {
+      "name" : "CERTIFICADO",
+      "dataType" : "CHAR",
+      "length" : 2,
+      "nullable" : true
+    }, {
+      "name" : "CONTADOR",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : false
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}
