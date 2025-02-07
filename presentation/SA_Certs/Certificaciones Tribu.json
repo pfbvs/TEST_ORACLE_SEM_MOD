@@ -1,0 +1,33 @@
+{
+  "presentationTable" : {
+    "name" : "Certificaciones Tribu",
+    "presentationColumns" : [ {
+      "name" : "DIM_MIEMBRO",
+      "sourceLogicalColumn" : "logicalColumn:BM_Certs.FACT_CERTIFICACIONES_TRIBU.DIM_MIEMBRO"
+    }, {
+      "name" : "COD_CERTIFICACION",
+      "sourceLogicalColumn" : "logicalColumn:BM_Certs.FACT_CERTIFICACIONES_TRIBU.COD_CERTIFICACION"
+    }, {
+      "name" : "DIM_FECHA_OBTENCION",
+      "sourceLogicalColumn" : "logicalColumn:BM_Certs.FACT_CERTIFICACIONES_TRIBU.DIM_FECHA_OBTENCION"
+    }, {
+      "name" : "FECHA_CADUCIDAD",
+      "sourceLogicalColumn" : "logicalColumn:BM_Certs.FACT_CERTIFICACIONES_TRIBU.FECHA_CADUCIDAD"
+    }, {
+      "name" : "ESTADO",
+      "sourceLogicalColumn" : "logicalColumn:BM_Certs.FACT_CERTIFICACIONES_TRIBU.ESTADO"
+    }, {
+      "name" : "CONTADOR",
+      "sourceLogicalColumn" : "logicalColumn:BM_Certs.FACT_CERTIFICACIONES_TRIBU.CONTADOR"
+    }, {
+      "name" : "ID",
+      "sourceLogicalColumn" : "logicalColumn:BM_Certs.FACT_CERTIFICACIONES_TRIBU.ID"
+    }, {
+      "name" : "FECHA",
+      "sourceLogicalColumn" : "logicalColumn:BM_Certs.DIM_FECHA.FECHA"
+    }, {
+      "name" : "NOMBRE_CERTIFICACION",
+      "sourceLogicalColumn" : "logicalColumn:BM_Certs.DIM_CERTIFICACIONES.NOMBRE_CERTIFICACION"
+    } ]
+  }
+}
